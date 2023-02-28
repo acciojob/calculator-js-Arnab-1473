@@ -3,13 +3,52 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+    <!-- the entire body must be written by student -->
+    <form id="form" name="form">
+        <div class="display">
+            <input type="text" id="display" name="display">
+        </div>
+        <div id="buttons">
+            <div id="firstrow">
+                <input type="button" name="C" id="C" value="C" onclick="form.display.value=''">
+                <input type="button" name="divi" id="divi" value="/" onclick="form.display.value+='/'">
+                <input type="button" name="" id="" value="*" onclick="form.display.value+='*'">
+                <input type="button" name="back" id="back" value="&#8592;" onclick="backspace()">
+            </div>
+            <div id="secondrow">
+                <input type="button" name="seven" id="7" value="7" onclick="form.display.value+='7'">
+                <input type="button" name="eight" id="8" value="8" onclick="form.display.value+='8'">
+                <input type="button" name="nine" id="9" value="9" onclick="form.display.value+='9'">
+                <input type="button" name="-" id="-" value="-" onclick="form.display.value+='-'">
+            </div>
+            <div id="thirdrow">
+                <input type="button" name="four" id="4" value="4" onclick="form.display.value+='4'">
+                <input type="button" name="five" id="5" value="5" onclick="form.display.value+='5'">
+                <input type="button" name="six" id="6" value="6" onclick="form.display.value+='6'">
+                <input type="button" name="plus" id="plus" value="+" onclick="form.display.value+='+'">
+            </div>
+            <div id="fourthrow">
+                <input type="button" name="one" id="1" value="1" onclick="form.display.value+='1'">
+                <input type="button" name="two" id="2" value="2" onclick="form.display.value+='2'">
+                <input type="button" name="three" id="3" value="3" onclick="form.display.value+='3'">
+                <input type="button" name="point" id="point" value="." onclick="form.display.value+='.'">
+            </div>
+            <div id="fivthrow">
+                <input type="button" name="op" id="op" value="(" onclick="form.display.value+='('">
+                <input type="button" name="zero" id="0" value="0" onclick="form.display.value+='0'">
+                <input type="button" name="cl" id="cl" value=")" onclick="form.display.value+=')'">
+                <input type="button" name="equal" id="equal" value="="
+                    onclick="form.display.value=eval(form.display.value)">
+            </div>
+        </div>
+    </form>
     <script type="text/javascript" src="./script.js">
-</script>
+
+    </script>
 
 </body>
 
